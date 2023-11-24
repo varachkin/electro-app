@@ -1,0 +1,10 @@
+.start-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.start-container-logo{
+    width: 60%;
+    color: rgba(0, 0, 100, 0.671);
+}

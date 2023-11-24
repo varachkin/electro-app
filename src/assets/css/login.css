@@ -1,0 +1,13 @@
+.pin-code-container{
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly; 
+   flex-direction: column;
+   height: 100%;
+}
+
+
+.typing-field-container{
+    height: 3rem;
+    letter-spacing: 0.5rem;
+}

@@ -1,0 +1,125 @@
+.table-wrapper {
+    width: 100%;
+}
+
+.table-container {
+    min-height: 85%;
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.table {
+    width: 100%;
+    height: 85%;
+}
+.grid-table-item{
+    display: flex;
+}
+.grid-table-item > div{
+    flex: 1;
+    justify-content: space-between;
+}
+
+.table-container-bg::after, .table-return-bg::after {
+    transition: 0.2s;
+    /*animation-name: floatAfterUp;*/
+    animation-duration: .2s;
+    animation-timing-function: ease-in-out;
+    content: '';
+    position: fixed;
+    left: 35%;
+    right: 35%;
+    height: 20%;
+    bottom: 1rem;
+    background: linear-gradient(180deg, rgba(139, 167, 32, 0) 10%, rgba(255, 255, 255, 1) 60%);
+    pointer-events: none;
+}
+.table-footer-btn{
+    display: flex;
+    position: absolute;
+    margin: 1rem 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    flex: 1;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    z-index: 5;
+    color: black;
+}
+.table-footer-btn button{
+    flex: 2;
+    margin: 0 2rem;
+    max-width: 50%;
+}
+.table-header {
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.table-body {
+    height: 89%;
+    overflow-y: auto;
+    position: relative;
+}
+
+div.table-nav button {
+    font-size: 1.35rem;
+}
+
+.table-nav>div>div {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 55px;
+}
+
+.table-icon-btn svg {
+    font-size: 2.25rem;
+}
+
+@keyframes floatAfterUp {
+    0% {
+        transform: translate(0, 200px);
+    }
+
+    50% {
+        transform: translate(0, 100px);
+    }
+
+    100% {
+        transform: translate(0, 0px);
+    }
+}
+
+@keyframes floatAfterDown {
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, 100px);
+    }
+
+    100% {
+        transform: translate(0, 200px);
+    }
+}
+
+.table-return{
+    width: 100%;
+    height: 88%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+@media (max-width: 600px) {
+    div.table-nav button {
+        font-size: 1rem;
+    }
+    .table-icon-btn svg {
+        width: 1.5rem;
+    }
+}

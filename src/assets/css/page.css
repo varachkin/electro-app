@@ -1,0 +1,33 @@
+.main-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    color: #ffffff;
+    opacity: 1;
+    position: relative;
+    z-index: 1;
+    flex: 9;
+    padding: 1rem 2rem;
+}
+
+.main-page::before {
+    background-image: url(./../img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    opacity: 0.2;
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+@media (max-width: 600px ) {
+    .main-page{
+        padding: 1.5rem;
+    }
+}

@@ -1,0 +1,11 @@
+.small {}
+
+.medium {}
+
+button.large h3 {
+    padding: '2rem 3rem';
+    border: '1.5px solid';
+    width: '75%';
+    font-size: '3rem';
+    /* margin: '0.5rem'; */
+}

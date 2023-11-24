@@ -1,0 +1,49 @@
+.header{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    padding: 2rem 0;
+    /* font-size: 5rem; */
+    height: 10%;
+}
+
+.header-logo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex: 2;
+}
+.header-btn{
+    flex: 1;
+
+}
+.header-btn button{
+    display: flex;
+    /* 
+    width: 80%;
+    font-size: 2rem;
+    border-radius: 2rem;*/
+    margin-left: auto; 
+}
+.header-logo div{
+    display: inline-flex;
+
+}
+.header-logo div svg{
+    width: 70%;
+}
+
+.header span {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 600px){
+    .header{
+        padding: 1rem 0;
+    }
+    .header span {
+        font-size: 0.75rem;
+    }
+}

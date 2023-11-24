@@ -1,0 +1,46 @@
+div .pick-up-container {
+    box-sizing: border-box;
+    justify-content: space-around;
+}
+
+.title-section {
+    display: flex;
+    align-items: end;
+}
+
+.spinner-section {
+    display: flex;
+    align-items: center;
+    transform: scale(1.5);
+}
+
+.info-section {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.round-items-wrapper {
+    box-sizing: border-box;
+    overflow-x: auto;
+}
+
+.round-items-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.round-items-wrapper {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.round-items-wrapper>div {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0;
+}
+
+.round-items-wrapper>div div {
+    margin-right: 1rem;
+}
